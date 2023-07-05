@@ -19,6 +19,4 @@ elif (( i % 3 == 0))
 else
     echo "$i"
 fi
-done
-Footer
-© 2023 GitHub, I
+done I
