@@ -22,4 +22,3 @@ You cannot use &&
 You cannot use wget
 You cannot execute your previous answer file (Do not include the name of the previous script in this one)
 service (init) must say that nginx is not running ← for real
-
