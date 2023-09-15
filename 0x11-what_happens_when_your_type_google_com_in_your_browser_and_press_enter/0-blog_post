@@ -1,0 +1,29 @@
+### Title: What Happens When You Type https://www.google.com and Press Enter?
+
+## Introduction
+Have you ever wondered what happens behind the scenes when you type a URL like https://www.google.com into your web browser and hit Enter? It seems like a simple action, but beneath the surface, a complex series of steps take place to ensure that you can access the website securely and quickly. In this blog post, we will delve into the various stages of this process, from the moment you hit Enter to the time you see Google's search page in your browser.
+
+## DNS Request
+The journey begins with a Domain Name System (DNS) request. When you enter a URL like https://www.google.com, your browser needs to find the IP address associated with that domain name. It sends a DNS query to a DNS server, which looks up the IP address for "www.google.com." This translation of the human-readable domain name into an IP address is crucial because computers use IP addresses to identify websites on the internet.
+ 
+## TCP/IP Connection
+Once your browser obtains the IP address of www.google.com, it initiates a Transmission Control Protocol (TCP) connection with Google's servers using the IP address and port number 443 (for HTTPS). The TCP/IP protocol ensures a reliable connection by breaking data into packets and managing their transmission and acknowledgment.
+Firewall Inspection
+Before your connection is established, it may pass through a firewall. Firewalls act as barriers that inspect incoming and outgoing traffic for potential threats. They ensure that only legitimate and safe traffic is allowed to pass through to the destination server.
+
+## HTTPS/SSL Handshake
+The next critical step is the establishment of a secure connection via HTTPS (Hypertext Transfer Protocol Secure). This is achieved through a process called the SSL/TLS (Secure Sockets Layer/Transport Layer Security) handshake. During this handshake, your browser and the Google server exchange cryptographic keys to encrypt the data transferred between them. This encryption ensures that your communication with the website is secure and protected from eavesdropping.
+
+## Load-Balancer
+Many popular websites, including Google, use load balancers to distribute incoming web traffic across multiple servers. Load balancers help maintain high availability and distribute the load evenly to ensure a smooth user experience. When you access Google, a load balancer routes your request to one of Google's many data centers based on various factors like server health and geographical proximity.
+
+## Web Server
+Once your request reaches Google's data center, it is directed to a web server. The web server's primary role is to handle HTTP requests, process them, and return the requested web pages. In Google's case, this includes serving search results and other web services.
+Application Server
+Behind the scenes, there are application servers that handle more complex tasks. For instance, when you perform a search on Google, an application server processes your query, accesses the relevant databases, and retrieves search results. These servers play a crucial role in delivering dynamic content to users.
+
+## Database
+In the case of Google, the search engine relies heavily on databases. When you search for something, the application server queries the databases to find the most relevant results. Databases store vast amounts of information, and Google uses complex algorithms to provide you with the most useful search results.
+
+## Conclusion
+The process of typing a URL like https://www.google.com into your browser and pressing Enter involves numerous steps, from DNS resolution to database queries. Each stage is crucial to ensure a seamless and secure browsing experience. The use of HTTPS, load balancers, and various servers demonstrates the intricate infrastructure that powers modern web services. The next time you perform a web search or visit a website, you'll have a better understanding of the complex journey your request takes before it appears on your screen.
